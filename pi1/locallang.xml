@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>module</type>
+        <description>Language labels for plugin &quot;tx_jpcarousel_pi1&quot;</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="itemSheet">Items</label>
+            <label index="layoutSheet">Layout</label>
+            <label index="featuresSheet">Features</label>
+            <label index="scriptConfigSheet">Script configuration</label>
+            <label index="advancedConfigSheet">Advanced configuration</label>
+            <label index="typeOfItem">Type of list item</label>
+            <label index="typeOfItemImage">Images</label>
+            <label index="typeOfItemCes">Content elements</label>
+            <label index="typeOfItemCeList">Content element with list items</label>
+            <label index="selectImages">Choose images</label>
+            <label index="selectCeRecords">Choose content elements</label>
+            <label index="selectCeListRecord">Choose content element with list items</label>
+            <label index="vertical">Vertical direction</label>
+            <label index="popup">Activate click enlarge</label>
+            <label index="useButtons">Show buttons</label>
+            <label index="showTitle">Show Carousel title</label>
+            <label index="carouselTitle">Carousel title: optional, can interfere with pagination buttons</label>
+            <label index="pauseDuration">Autoplay pause duration in milliseconds</label>
+            <label index="speed">Animation speed in milliseconds</label>
+            <label index="fx">Transition effect</label>
+            <label index="easing">Easing method for sliding</label>
+            <label index="direction">Direction of the carousel</label>
+            <label index="pagination">Pagination:Should the carousel show pagination buttons.</label>
+            <label index="autoPlay">Autoplay</label>
+            <label index="circular">Circular sliding</label>
+            <label index="infinite">Infinite sliding</label>
+            <label index="pauseOnHover">Pause on hover</label>
+            <label index="visible">Number of visible items</label>
+            <label index="start">Start with item</label>
+            <label index="scroll">Scroll number of items</label>
+            <label index="buttonsScroll">Buttons scroll number of items</label>
+            <label index="buttonsSpeed">Buttons animation speed</label>
+            <label index="buttonsEasing">Buttons easing methode</label>
+            <label index="includeCSS">Include CSS (for example not again for second carousel on same page)</label>
+            <label index="pathToJcarouselCSS">Alternative path to CSS file</label>
+            <label index="titleText">Image title Text</label>
+            <label index="altText">Image alt text</label>
+            <label index="captionText">Thumb image caption text</label>
+            <label index="imageLinks">Image links (one per line, one link per image)</label>
+        </languageKey>
+
+
+        <languageKey index="nl" type="array">
+            <label index="itemSheet">Items</label>
+            <label index="layoutSheet">Vormgeving</label>
+            <label index="featuresSheet">Opties</label>
+            <label index="scriptConfigSheet">Script configuratie</label>
+            <label index="advancedConfigSheet">Geavanceerde configuratie</label>
+            <label index="typeOfItem">Type list item</label>
+            <label index="typeOfItemImage">Afbeeldingen</label>
+            <label index="typeOfItemCes">Content elementen</label>
+            <label index="typeOfItemCeList">Content element met list items</label>
+            <label index="selectImages">Kies afbeeldingen</label>
+            <label index="selectCeRecords">Kies content elementen</label>
+            <label index="selectCeListRecord">Kies content element met list items</label>
+            <label index="vertical">Verticale richting</label>
+            <label index="popup">Activeer klik vergroot</label>
+            <label index="useButtons">Toon knoppen</label>
+            <label index="showTitle">Toon Carousel titel</label>
+            <label index="carouselTitle">Carousel titel: optioneel kan paginering buttons in de weg zitten</label>
+            <label index="pauseDuration">Autoplay pause duur in milliseconden</label>
+            <label index="speed">Animatie snelheid in milliseconden</label>
+            <label index="fx">Transitie effect</label>
+            <label index="easing">Easing methode voor sliding</label>
+            <label index="direction">Richting van de carousel</label>
+            <label index="pagination">Paginering:Toon paginering buttons.</label>
+            <label index="autoPlay">Autoplay</label>
+            <label index="circular">Circulaire sliding</label>
+            <label index="infinite">Oneindige sliding</label>
+            <label index="pauseOnHover">Pause bij muishover</label>
+            <label index="visible">Aantal zichtbare items</label>
+            <label index="start">Start met item</label>
+            <label index="scroll">Aantal scroll items</label>
+            <label index="buttonsScroll">Aantal scroll items via knoppen</label>
+            <label index="buttonsSpeed">Knoppen animatie snelheid</label>
+            <label index="buttonsEasing">Knoppen easing methode</label>
+            <label index="includeCSS">Laadt CSS (bijv. niet nog eens voor een 2e carousel op dezelfde pagina)</label>
+            <label index="pathToJcarouselCSS">Alternatief pad naar CSS bestand </label>
+            <label index="titleText">Afbeelding titel tekst</label>
+            <label index="altText">Afbeelding alt tekst</label>
+            <label index="captionText">Thumb afbeelding onderschrift tekst</label>
+            <label index="imageLinks">Afbeelding links (één per regel, één link per afbeelding)</label>
+        </languageKey>
+
+
+        <languageKey index="fr" type="array">
+            <label index="itemSheet">Elements</label>
+            <label index="layoutSheet">Affichage</label>
+            <label index="featuresSheet">Paramètres</label>
+            <label index="scriptConfigSheet">Configuration du script</label>
+            <label index="typeOfItem">Type d'éléments</label>
+            <label index="typeOfItemCes">Eléments de contenu</label>
+            <label index="typeOfItemCeList">Eléments de contenu (sous forme de liste)</label>
+            <label index="selectImages">Choisissez les images</label>
+            <label index="selectCeRecords">Choisissez les éléments de contenu</label>
+            <label index="selectCeListRecord">Choisissez les éléments de contenu (sous forme de liste)</label>
+            <label index="vertical">Mouvement vertical</label>
+            <label index="popup">Cliquer pour agrandir</label>
+            <label index="useButtons">Afficher les boutons</label>
+            <label index="showTitle">Afficher le titre du carrousel</label>
+            <label index="pauseDuration">Durée de la pause (en ms et si lecture automatique)</label>
+            <label index="speed">Durée de l'animation (en ms)</label>
+            <label index="easing">Type de mouvement</label>
+            <label index="direction">Sens du mouvement</label>
+            <label index="autoPlay">Lecture automatique</label>
+            <label index="circular">Mouvement en boucle</label>
+            <label index="infinite">Mouvement infinie</label>
+            <label index="pauseOnHover">Pause au survol d'un élément</label>
+            <label index="visible">Nombre d'éléments visibles</label>
+            <label index="start">Elément de départ</label>
+            <label index="scroll">Nombre d'éléments en mouvement (en lecture auto.)</label>
+            <label index="buttonsScroll">Nombre d'éléments en mouvement (par clic)</label>
+            <label index="buttonsSpeed">Durée de l'animation (en ms) (par clic)</label>
+            <label index="buttonsEasing">Type de mouvement (par clic)</label>
+            <label index="includeCSS">Include CSS (for example not again for second carousel on same page)</label>
+            <label index="pathToJcarouselCSS">Chemin vers la feuille de style alternative</label>
+            <label index="titleText">Texte de l'infobulle de l'image</label>
+            <label index="altText">Texte alternatif de l'image</label>
+            <label index="captionText">Légende de l'image</label>
+        </languageKey>
+
+        <languageKey index="pl" type="array">
+            <label index="itemSheet">Obiekty</label>
+            <label index="layoutSheet">Wygląd</label>
+            <label index="featuresSheet">Opcje</label>
+            <label index="scriptConfigSheet">Konfiguracja skryptu</label>
+            <label index="typeOfItem">Rodzaj listy obiektów</label>
+            <label index="typeOfItemImage">Obrazki</label>
+            <label index="typeOfItemCes">Elementy zawartości</label>
+            <label index="typeOfItemCeList">Elementy zawartości z listą elementów</label>
+            <label index="selectImages">Wybierz obrazki</label>
+            <label index="selectCeRecords">Wybierz element zawartości</label>
+            <label index="selectCeListRecord">Wybierz element zawartości razem z listą</label>
+            <label index="vertical">Pionowa orientacja</label>
+            <label index="popup">Aktywacja powiększenia</label>
+            <label index="useButtons">Pokaz przyciski</label>
+            <label index="showTitle">Pokaż tytuł karuzeli</label>
+            <label index="pauseDuration">Opuźnienie autostartu w milisekundach</label>
+            <label index="speed">Prędkość animacji w milisekundach</label>
+            <label index="easing">Metoda złagodzenia przesuwania</label>
+            <label index="direction">Kierunek przesunięcia karuzeli</label>
+            <label index="autoPlay">Autostart</label>
+            <label index="circular">Wygładzenie przesuwania</label>
+            <label index="pauseOnHover">Zatrzymaj po najechaniu</label>
+            <label index="visible">Ilość widocznych elementów</label>
+            <label index="start">Wystartuj elementem</label>
+            <label index="scroll">Ilość przesówanych elementów</label>
+            <label index="buttonsScroll">Przycisk przesuwa następująca ilość elementów</label>
+            <label index="buttonsSpeed">Szybkość animacji po naciśnięciu na przycisk</label>
+            <label index="buttonsEasing">Wygładzenie przesuwania po naciśnięciu na przycisk</label>
+            <label index="includeCSS">Include CSS (for example not again for second carousel on same page)</label>
+            <label index="pathToJcarouselCSS">Ścieżka do pliku CSS</label>
+            <label index="titleText">Tytuł obrazka</label>
+            <label index="altText">Opis ALT obrazka</label>
+            <label index="captionText">Opis obrazka (caption)</label>
+        </languageKey>
+
+        <languageKey index="de" type="array">
+            <label index="itemSheet">Datensätze</label>
+            <label index="layoutSheet">Layout</label>
+            <label index="featuresSheet">Funktionen</label>
+            <label index="scriptConfigSheet">Script-Konfiguration</label>
+            <label index="typeOfItem">Art der Datensätze</label>
+            <label index="typeOfItemImage">Bilder</label>
+            <label index="typeOfItemCes">Content-Elemente</label>
+            <label index="typeOfItemCeList">Content-Element mit Listenelementen</label>
+            <label index="selectImages">Bilder auswählen</label>
+            <label index="selectCeRecords">Wählen Sie Content-Elemente</label>
+            <label index="selectCeListRecord">Wählen Sie Content-Elemente mit Listenelementen</label>
+            <label index="vertical">Vertikale Richtung</label>
+            <label index="popup">Klick-Vergrößern aktivieren</label>
+            <label index="useButtons">Buttons anzeigen</label>
+            <label index="showTitle">Titel des Karussells anzeigen</label>
+            <label index="pauseDuration">Autoplay Pausendauer in Millisekunden</label>
+            <label index="speed">Animationsgeschwindigkeit in Millisekunden</label>
+            <label index="easing">Easing Methode fürs Sliden</label>
+            <label index="direction">Richtung des Karussells</label>
+            <label index="autoPlay">Autoplay</label>
+            <label index="circular">Endlosschleife</label>
+            <label index="infinite">Unendlich</label>
+            <label index="pauseOnHover">Pause bei MouseHover</label>
+            <label index="visible">Anzahl der sichtbaren Elemente</label>
+            <label index="start">Start mit Element Nr.</label>
+            <label index="scroll">Autoscroll Schrittweite</label>
+            <label index="buttonsScroll">Buttonclick Schrittweite</label>
+            <label index="buttonsSpeed">Buttonclick Animationsgeschwindigkeit</label>
+            <label index="buttonsEasing">Buttonclick Easing Methode</label>
+            <label index="includeCSS">Include CSS (for example not again for second carousel on same page)</label>
+            <label index="pathToJcarouselCSS">alternativer Pfad zu CSS-Datei</label>
+            <label index="titleText">Titeltext des Bildes</label>
+            <label index="altText">Alternativtext des Bildes</label>
+            <label index="captionText">Bildunterschrift</label>
+            <label index="imageLinks">Links (einer pro Zeile, ein Link pro Bild)</label>
+        </languageKey>
+
+    </data>
+</T3locallang>

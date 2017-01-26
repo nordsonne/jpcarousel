@@ -1,0 +1,124 @@
+# Constants
+plugin.tx_jpcarousel_pi1 {
+
+  # cat=JPCAROUSEL/enable/b; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:popup
+  popup = 1
+
+  # cat=JPCAROUSEL/enable/e; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:useButtons
+  useButtons = 1
+
+  # cat=JPCAROUSEL/enable/h; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:showTitle
+  showTitle = 1
+
+  # cat=JPCAROUSEL/enable/k; type=string; label= LLL:EXT:jpcarousel/locallang.xml:altTitlePreviousButton
+  altTitlePreviousButton = Previous
+
+  # cat=JPCAROUSEL/enable/l; type=string; label= LLL:EXT:jpcarousel/locallang.xml:altTitleNextButton
+  altTitleNextButton = Next
+
+  # cat=JPCAROUSEL/cscript/a; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:autoPlay
+  autoPlay = 1
+
+  # cat=JPCAROUSEL/cscript/b; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:pagination
+  pagination = 1
+
+  # cat=JPCAROUSEL/cscript/c; type=int+; label= LLL:EXT:jpcarousel/locallang.xml:pauseDuration
+  pauseDuration = 1500
+
+  # cat=JPCAROUSEL/cscript/d; type=int+; label= LLL:EXT:jpcarousel/locallang.xml:speed
+  speed = 700
+
+  # cat=JPCAROUSEL/cscript/e; type=options[scroll,directscroll,fade,crossfade,cover,uncover]; label=LLL:EXT:jpcarousel/locallang.xml:fx
+  fx = scroll
+
+  # cat=JPCAROUSEL/cscript/f; type=options[swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]; label=LLL:EXT:jpcarousel/locallang.xml:easing
+  easing = swing
+
+  # cat=JPCAROUSEL/cscript/g; type=options[right,left,up,down]; label= LLL:EXT:jpcarousel/locallang.xml:direction
+  direction = left
+
+  # cat=JPCAROUSEL/cscript/h; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:circular
+  circular = 1
+
+  # cat=JPCAROUSEL/cscript/h; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:infinite
+  infinite = 1
+
+  # cat=JPCAROUSEL/cscript/i; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:pauseOnHover
+  pauseOnHover = 1
+
+  # cat=JPCAROUSEL/cscript/j; type=float; label= LLL:EXT:jpcarousel/locallang.xml:visible
+  visible = 3
+
+  # cat=JPCAROUSEL/cscript/m; type=int+; label= LLL:EXT:jpcarousel/locallang.xml:start
+  start = 0
+
+  # cat=JPCAROUSEL/cscript/n; type=float; label= LLL:EXT:jpcarousel/locallang.xml:scroll
+  scroll = 1
+
+  # cat=JPCAROUSEL/cscript/x; type=string; label= LLL:EXT:jpcarousel/locallang.xml:beforeStart
+  beforeStart = 0
+  # cat=JPCAROUSEL/cscript/y; type=string; label= LLL:EXT:jpcarousel/locallang.xml:afterEnd
+  afterEnd = 0
+  # cat=JPCAROUSEL/cscript/z; type=string; label= LLL:EXT:jpcarousel/locallang.xml:extraConfig
+  extraConfig =
+  # cat=JPCAROUSEL/cscript/z; type=string; label= LLL:EXT:jpcarousel/locallang.xml:extraJs
+   extraJs =
+
+ # cat=JPCAROUSEL/cscript/s; type=float; label= LLL:EXT:jpcarousel/locallang.xml:buttonsScroll
+  buttonsScroll = 1
+
+  # cat=JPCAROUSEL/cscript/t; type=int+; label= LLL:EXT:jpcarousel/locallang.xml:buttonsSpeed
+  buttonsSpeed = 400
+
+  # cat=JPCAROUSEL/cscript/u; type=options[swing,linear,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]; label=LLL:EXT:jpcarousel/locallang.xml:buttonsEasing
+   buttonsEasing = swing
+
+
+
+  # cat=JPCAROUSEL/dims/a; type=string; label= LLL:EXT:jpcarousel/locallang.xml:carouselWidth
+  carouselWidth = 740
+
+  # cat=JPCAROUSEL/dims/b; type=string; label= LLL:EXT:jpcarousel/locallang.xml:carouselHeight
+  carouselHeight = 230
+
+    # cat=JPCAROUSEL/dims/d; type=color;  label= LLL:EXT:jpcarousel/locallang.xml:carouselBgColor
+  carouselBgColor = #FDFDFD
+
+  # cat=JPCAROUSEL/dims/g; type=string; label= LLL:EXT:jpcarousel/locallang.xml:itemMaxH
+  itemMaxH = 150
+
+  #cat=JPCAROUSEL/dims/f; type=string; label= LLL:EXT:jpcarousel/locallang.xml:itemMaxW
+  itemMaxW = 200
+
+  # cat=JPCAROUSEL/dims/o; type=string; label= LLL:EXT:jpcarousel/locallang.xml:popup_maxH
+  popup_maxH = 0
+
+  #cat=JPCAROUSEL/dims/l; type=string; label= LLL:EXT:jpcarousel/locallang.xml:popup_maxW
+  popup_maxW = 800
+
+
+
+
+  #cat=JPCAROUSEL/file/b; type=file[html,htm,txt,tmpl]; label=LLL:EXT:jpcarousel/locallang.xml:pathToJPcarouselHTML
+	file = EXT:jpcarousel/res/template.html
+
+  #cat=JPCAROUSEL/file/h type=file[js]; label= LLL:EXT:jpcarousel/locallang.xml:pathToJquery
+	pathToJquery = EXT:jpcarousel/res/scripts/jquery-1.8.2.min.js
+
+  #cat=JPCAROUSEL/file/l; type=file[js]; label= LLL:EXT:jpcarousel/locallang.xml:pathToJPcarouselJS
+	pathToJPcarouselJS = EXT:jpcarousel/res/scripts/jquery.carouFredSel-6.2.0-packed.js
+
+  #cat=JPCAROUSEL/file/o; type=file[css]; label= LLL:EXT:jpcarousel/locallang.xml:pathToJPcarouselCSS
+	pathToJPcarouselCSS = EXT:jpcarousel/res/css/jpcarousel.css
+
+  #cat=JPCAROUSEL/file/q; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:inlineJS
+  inlineJS = 1
+
+  #cat=JPCAROUSEL/file/r; type=boolean; label= LLL:EXT:jpcarousel/locallang.xml:inlineCSS
+  inlineCSS = 1
+
+
+
+
+
+}

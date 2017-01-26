@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:jpcarousel/pi1/locallang.xml:itemSheet</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<myType>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:typeOfItem</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<items>
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:jpcarousel/pi1/locallang.xml:typeOfItemImage
+										</numIndex>
+										<numIndex index="1">images</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:jpcarousel/pi1/locallang.xml:typeOfItemCes
+										</numIndex>
+										<numIndex index="1">ce</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:jpcarousel/pi1/locallang.xml:typeOfItemCeList
+										</numIndex>
+										<numIndex index="1">list</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</myType>
+
+
+					<selectImages>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:selectImages</label>
+							<displayCond>FIELD:myType:=:images</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>files</allowed>
+								<size>10</size>
+								<maxitems>1000</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+								<allowed>gif,jpg,jpeg,png</allowed>
+								<max_size>10240</max_size>
+								<uploadfolder>uploads/tx_jpcarousel</uploadfolder>
+							</config>
+						</TCEforms>
+					</selectImages>
+					<popup>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:popup</label>
+							<displayCond>FIELD:myType:=:images</displayCond>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</popup>
+					<titleText>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:titleText</label>
+							<displayCond>FIELD:myType:=:images</displayCond>
+							<config>
+								<type>text</type>
+								<wrap>OFF</wrap>
+								<cols>30</cols>
+								<rows>10</rows>
+							</config>
+						</TCEforms>
+					</titleText>
+					<altText>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:altText</label>
+							<displayCond>FIELD:myType:=:images</displayCond>
+							<config>
+								<type>text</type>
+								<wrap>OFF</wrap>
+								<cols>30</cols>
+								<rows>10</rows>
+							</config>
+						</TCEforms>
+					</altText>
+					<captionText>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:captionText</label>
+							<displayCond>FIELD:myType:=:images</displayCond>
+							<config>
+								<type>text</type>
+								<wrap>OFF</wrap>
+								<cols>30</cols>
+								<rows>10</rows>
+							</config>
+						</TCEforms>
+					</captionText>
+					<imageLinks>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:imageLinks</label>
+							<displayCond>FIELD:myType:=:images</displayCond>
+							<config>
+								<type>text</type>
+								<wrap>OFF</wrap>
+								<cols>30</cols>
+								<rows>10</rows>
+								<wizards type="array">
+									<_PADDING>2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel</title>
+										<icon>actions-wizard-link</icon>
+										<module>
+											<name>wizard_link</name>
+										</module>
+										<JSopenParams>height=800,width=600,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+
+						</TCEforms>
+					</imageLinks>
+					<selectCeRecords>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:selectCeRecords</label>
+							<displayCond>FIELD:myType:=:ce</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>tt_content</allowed>
+								<size>10</size>
+								<minitems>0</minitems>
+								<maxitems>50</maxitems>
+								<show_thumbs>1</show_thumbs>
+								<autoSizeMax>40</autoSizeMax>
+							</config>
+						</TCEforms>
+					</selectCeRecords>
+					<selectCeListRecord>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:selectCeListRecord</label>
+							<displayCond>FIELD:myType:=:list</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>tt_content</allowed>
+								<size>1</size>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+								<show_thumbs>1</show_thumbs>
+								<autoSizeMax>40</autoSizeMax>
+							</config>
+						</TCEforms>
+					</selectCeListRecord>
+				</el>
+			</ROOT>
+		</sDEF>
+
+		<features>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:jpcarousel/pi1/locallang.xml:featuresSheet</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<useButtons>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:useButtons</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</useButtons>
+					<carouselTitle>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:carouselTitle</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval></eval>
+							</config>
+						</TCEforms>
+					</carouselTitle>
+				</el>
+			</ROOT>
+		</features>
+
+
+		<layout>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:jpcarousel/pi1/locallang.xml:layoutSheet</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<carouselWidth>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/locallang.xml:carouselWidth</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</carouselWidth>
+					<carouselHeight>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/locallang.xml:carouselHeight</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</carouselHeight>
+					<carouselBgColor>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/locallang.xml:carouselBgColor</label>
+							<config>
+								<type>input</type>
+								<size>6</size>
+								<wizards>
+									<colorChoice>
+										<type>colorbox</type>
+										<title>Click to choose color</title>
+										<tableStyle>border:solid 1px black;</tableStyle>
+										<module>
+											<name>wizard_colorpicker</name>
+										</module>
+										<JSopenParams>height=600,width=380,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</colorChoice>
+								</wizards>
+							</config>
+						</TCEforms>
+					</carouselBgColor>
+					<itemMaxWidth>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/locallang.xml:itemMaxW</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</itemMaxWidth>
+					<itemMaxHeight>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/locallang.xml:itemMaxH</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</itemMaxHeight>
+					<pathToJPcarouselHTML>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/locallang.xml:pathToJPcarouselHTML</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<wizards type="array">
+									<_PADDING>2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>Link</title>
+										<icon>link_popup.gif</icon>
+										<module>
+											<name>wizard_link</name>
+										</module>
+										<params type="array">
+											<blindLinkOptions>page,url,mail,spec</blindLinkOptions>
+											<allowedExtensions>htm,html,tmpl,tpl</allowedExtensions>
+										</params>
+										<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+						</TCEforms>
+					</pathToJPcarouselHTML>
+					<includeCSS>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:includeCSS</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</includeCSS>
+					<pathToJPcarouselCSS>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/locallang.xml:pathToJPcarouselCSS</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<default></default>
+
+								<wizards type="array">
+									<_PADDING>2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>Link</title>
+										<icon>link_popup.gif</icon>
+										<module>
+											<name>wizard_link</name>
+										</module>
+										<params type="array">
+											<blindLinkOptions>page,url,mail,spec</blindLinkOptions>
+											<allowedExtensions>css</allowedExtensions>
+										</params>
+										<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+						</TCEforms>
+					</pathToJPcarouselCSS>
+
+				</el>
+			</ROOT>
+		</layout>
+
+
+		<scriptConfig>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:jpcarousel/pi1/locallang.xml:scriptConfigSheet</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<autoPlay>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:autoPlay</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</autoPlay>
+					<pagination>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:pagination</label>
+							<config>
+								<type>check</type>
+								<default>true</default>
+							</config>
+						</TCEforms>
+					</pagination>
+					<pauseDuration>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:pauseDuration</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</pauseDuration>
+					<speed>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:speed</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</speed>
+					<fx>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:fx</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">scroll</numIndex>
+										<numIndex index="1">scroll</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">directscroll</numIndex>
+										<numIndex index="1">directscroll</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">fade</numIndex>
+										<numIndex index="1">fade</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">crossfade</numIndex>
+										<numIndex index="1">crossfade</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">cover</numIndex>
+										<numIndex index="1">cover</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">uncover</numIndex>
+										<numIndex index="1">uncover</numIndex>
+									</numIndex>
+								</items>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</fx>
+					<easing>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:easing</label>
+							<config>
+								<type>select</type>
+
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0"></numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">swing</numIndex>
+										<numIndex index="1">swing</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">linear</numIndex>
+										<numIndex index="1">linear</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">easeInQuad</numIndex>
+										<numIndex index="1">easeInQuad</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">easeOutQuad</numIndex>
+										<numIndex index="1">easeOutQuad</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">easeInOutQuad</numIndex>
+										<numIndex index="1">easeInOutQuad</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">easeInCubic</numIndex>
+										<numIndex index="1">easeInCubic</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">easeOutCubic</numIndex>
+										<numIndex index="1">easeOutCubic</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">easeInOutCubic</numIndex>
+										<numIndex index="1">easeInOutCubic</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">easeInQuart</numIndex>
+										<numIndex index="1">easeInQuart</numIndex>
+									</numIndex>
+									<numIndex index="10" type="array">
+										<numIndex index="0">easeOutQuart</numIndex>
+										<numIndex index="1">easeOutQuart</numIndex>
+									</numIndex>
+									<numIndex index="11" type="array">
+										<numIndex index="0">easeInOutQuart</numIndex>
+										<numIndex index="1">easeInOutQuart</numIndex>
+									</numIndex>
+									<numIndex index="12" type="array">
+										<numIndex index="0">easeInQuint</numIndex>
+										<numIndex index="1">easeInQuint</numIndex>
+									</numIndex>
+									<numIndex index="13" type="array">
+										<numIndex index="0">easeOutQuint</numIndex>
+										<numIndex index="1">easeOutQuint</numIndex>
+									</numIndex>
+									<numIndex index="14" type="array">
+										<numIndex index="0">easeInOutQuint</numIndex>
+										<numIndex index="1">easeInOutQuint</numIndex>
+									</numIndex>
+									<numIndex index="15" type="array">
+										<numIndex index="0">easeInSine</numIndex>
+										<numIndex index="1">easeInSine</numIndex>
+									</numIndex>
+									<numIndex index="16" type="array">
+										<numIndex index="0">easeOutSine</numIndex>
+										<numIndex index="1">easeOutSine</numIndex>
+									</numIndex>
+									<numIndex index="17" type="array">
+										<numIndex index="0">easeInOutSine</numIndex>
+										<numIndex index="1">easeInOutSine</numIndex>
+									</numIndex>
+									<numIndex index="18" type="array">
+										<numIndex index="0">easeInExpo</numIndex>
+										<numIndex index="1">easeInExpo</numIndex>
+									</numIndex>
+									<numIndex index="19" type="array">
+										<numIndex index="0">easeOutExpo</numIndex>
+										<numIndex index="1">easeOutExpo</numIndex>
+									</numIndex>
+									<numIndex index="20" type="array">
+										<numIndex index="0">easeInOutExpo</numIndex>
+										<numIndex index="1">easeInOutExpo</numIndex>
+									</numIndex>
+									<numIndex index="21" type="array">
+										<numIndex index="0">easeInCirc</numIndex>
+										<numIndex index="1">easeInCirc</numIndex>
+									</numIndex>
+									<numIndex index="22" type="array">
+										<numIndex index="0">easeOutCirc</numIndex>
+										<numIndex index="1">easeOutCirc</numIndex>
+									</numIndex>
+									<numIndex index="23" type="array">
+										<numIndex index="0">easeInOutCirc</numIndex>
+										<numIndex index="1">easeInOutCirc</numIndex>
+									</numIndex>
+									<numIndex index="24" type="array">
+										<numIndex index="0">easeInElastic</numIndex>
+										<numIndex index="1">easeInElastic</numIndex>
+									</numIndex>
+									<numIndex index="25" type="array">
+										<numIndex index="0">easeOutElastic</numIndex>
+										<numIndex index="1">easeOutElastic</numIndex>
+									</numIndex>
+									<numIndex index="26" type="array">
+										<numIndex index="0">easeInOutElastic</numIndex>
+										<numIndex index="1">easeInOutElastic</numIndex>
+									</numIndex>
+									<numIndex index="27" type="array">
+										<numIndex index="0">easeInBack</numIndex>
+										<numIndex index="1">easeInBack</numIndex>
+									</numIndex>
+									<numIndex index="28" type="array">
+										<numIndex index="0">easeOutBack</numIndex>
+										<numIndex index="1">easeOutBack</numIndex>
+									</numIndex>
+									<numIndex index="29" type="array">
+										<numIndex index="0">easeInOutBack</numIndex>
+										<numIndex index="1">easeInOutBack</numIndex>
+									</numIndex>
+									<numIndex index="30" type="array">
+										<numIndex index="0">easeInBounce</numIndex>
+										<numIndex index="1">easeInBounce</numIndex>
+									</numIndex>
+									<numIndex index="31" type="array">
+										<numIndex index="0">easeOutBounce</numIndex>
+										<numIndex index="1">easeOutBounce</numIndex>
+									</numIndex>
+									<numIndex index="32" type="array">
+										<numIndex index="0">easeInOutBounce</numIndex>
+										<numIndex index="1">easeInOutBounce</numIndex>
+									</numIndex>
+								</items>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</easing>
+					<direction>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:direction</label>
+							<config>
+								<type>select</type>
+
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0"></numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">right</numIndex>
+										<numIndex index="1">right</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">left</numIndex>
+										<numIndex index="1">left</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">up</numIndex>
+										<numIndex index="1">up</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">down</numIndex>
+										<numIndex index="1">down</numIndex>
+									</numIndex>
+								</items>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</direction>
+					<circular>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:circular</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</circular>
+					<infinite>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:infinite</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</infinite>
+					<pauseOnHover>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:pauseOnHover</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</pauseOnHover>
+					<visible>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:visible</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</visible>
+					<!-- <start>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:start</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</start> -->
+
+					<scroll>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:scroll</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</scroll>
+					<buttonsScroll>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:buttonsScroll</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</buttonsScroll>
+					<buttonsSpeed>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:buttonsSpeed</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<checkbox></checkbox>
+								<default></default>
+								<eval>nospace</eval>
+							</config>
+						</TCEforms>
+					</buttonsSpeed>
+					<buttonsEasing>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:jpcarousel/pi1/locallang.xml:buttonsEasing</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0"></numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">swing</numIndex>
+										<numIndex index="1">swing</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">linear</numIndex>
+										<numIndex index="1">linear</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">easeInQuad</numIndex>
+										<numIndex index="1">easeInQuad</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">easeOutQuad</numIndex>
+										<numIndex index="1">easeOutQuad</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">easeInOutQuad</numIndex>
+										<numIndex index="1">easeInOutQuad</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">easeInCubic</numIndex>
+										<numIndex index="1">easeInCubic</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">easeOutCubic</numIndex>
+										<numIndex index="1">easeOutCubic</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">easeInOutCubic</numIndex>
+										<numIndex index="1">easeInOutCubic</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">easeInQuart</numIndex>
+										<numIndex index="1">easeInQuart</numIndex>
+									</numIndex>
+									<numIndex index="10" type="array">
+										<numIndex index="0">easeOutQuart</numIndex>
+										<numIndex index="1">easeOutQuart</numIndex>
+									</numIndex>
+									<numIndex index="11" type="array">
+										<numIndex index="0">easeInOutQuart</numIndex>
+										<numIndex index="1">easeInOutQuart</numIndex>
+									</numIndex>
+									<numIndex index="12" type="array">
+										<numIndex index="0">easeInQuint</numIndex>
+										<numIndex index="1">easeInQuint</numIndex>
+									</numIndex>
+									<numIndex index="13" type="array">
+										<numIndex index="0">easeOutQuint</numIndex>
+										<numIndex index="1">easeOutQuint</numIndex>
+									</numIndex>
+									<numIndex index="14" type="array">
+										<numIndex index="0">easeInOutQuint</numIndex>
+										<numIndex index="1">easeInOutQuint</numIndex>
+									</numIndex>
+									<numIndex index="15" type="array">
+										<numIndex index="0">easeInSine</numIndex>
+										<numIndex index="1">easeInSine</numIndex>
+									</numIndex>
+									<numIndex index="16" type="array">
+										<numIndex index="0">easeOutSine</numIndex>
+										<numIndex index="1">easeOutSine</numIndex>
+									</numIndex>
+									<numIndex index="17" type="array">
+										<numIndex index="0">easeInOutSine</numIndex>
+										<numIndex index="1">easeInOutSine</numIndex>
+									</numIndex>
+									<numIndex index="18" type="array">
+										<numIndex index="0">easeInExpo</numIndex>
+										<numIndex index="1">easeInExpo</numIndex>
+									</numIndex>
+									<numIndex index="19" type="array">
+										<numIndex index="0">easeOutExpo</numIndex>
+										<numIndex index="1">easeOutExpo</numIndex>
+									</numIndex>
+									<numIndex index="20" type="array">
+										<numIndex index="0">easeInOutExpo</numIndex>
+										<numIndex index="1">easeInOutExpo</numIndex>
+									</numIndex>
+									<numIndex index="21" type="array">
+										<numIndex index="0">easeInCirc</numIndex>
+										<numIndex index="1">easeInCirc</numIndex>
+									</numIndex>
+									<numIndex index="22" type="array">
+										<numIndex index="0">easeOutCirc</numIndex>
+										<numIndex index="1">easeOutCirc</numIndex>
+									</numIndex>
+									<numIndex index="23" type="array">
+										<numIndex index="0">easeInOutCirc</numIndex>
+										<numIndex index="1">easeInOutCirc</numIndex>
+									</numIndex>
+									<numIndex index="24" type="array">
+										<numIndex index="0">easeInElastic</numIndex>
+										<numIndex index="1">easeInElastic</numIndex>
+									</numIndex>
+									<numIndex index="25" type="array">
+										<numIndex index="0">easeOutElastic</numIndex>
+										<numIndex index="1">easeOutElastic</numIndex>
+									</numIndex>
+									<numIndex index="26" type="array">
+										<numIndex index="0">easeInOutElastic</numIndex>
+										<numIndex index="1">easeInOutElastic</numIndex>
+									</numIndex>
+									<numIndex index="27" type="array">
+										<numIndex index="0">easeInBack</numIndex>
+										<numIndex index="1">easeInBack</numIndex>
+									</numIndex>
+									<numIndex index="28" type="array">
+										<numIndex index="0">easeOutBack</numIndex>
+										<numIndex index="1">easeOutBack</numIndex>
+									</numIndex>
+									<numIndex index="29" type="array">
+										<numIndex index="0">easeInOutBack</numIndex>
+										<numIndex index="1">easeInOutBack</numIndex>
+									</numIndex>
+									<numIndex index="30" type="array">
+										<numIndex index="0">easeInBounce</numIndex>
+										<numIndex index="1">easeInBounce</numIndex>
+									</numIndex>
+									<numIndex index="31" type="array">
+										<numIndex index="0">easeOutBounce</numIndex>
+										<numIndex index="1">easeOutBounce</numIndex>
+									</numIndex>
+									<numIndex index="32" type="array">
+										<numIndex index="0">easeInOutBounce</numIndex>
+										<numIndex index="1">easeInOutBounce</numIndex>
+									</numIndex>
+								</items>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</buttonsEasing>
+				</el>
+			</ROOT>
+		</scriptConfig>
+		<advancedConfig>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:jpcarousel/pi1/locallang.xml:advancedConfigSheet</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<beforeStart>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/locallang.xml:beforeStart</label>
+							<config>
+								<type>text</type>
+								<wrap>OFF</wrap>
+								<cols>30</cols>
+								<rows>10</rows>
+							</config>
+						</TCEforms>
+					</beforeStart>
+					<afterEnd>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/locallang.xml:afterEnd</label>
+							<config>
+								<type>text</type>
+								<wrap>OFF</wrap>
+								<cols>30</cols>
+								<rows>10</rows>
+							</config>
+						</TCEforms>
+					</afterEnd>
+					<extraConfig>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/locallang.xml:extraConfig</label>
+							<config>
+								<type>text</type>
+								<wrap>OFF</wrap>
+								<cols>30</cols>
+								<rows>10</rows>
+							</config>
+						</TCEforms>
+					</extraConfig>
+					<extraJs>
+						<TCEforms>
+							<label>LLL:EXT:jpcarousel/locallang.xml:extraJs</label>
+							<config>
+								<type>text</type>
+								<wrap>OFF</wrap>
+								<cols>30</cols>
+								<rows>10</rows>
+							</config>
+						</TCEforms>
+					</extraJs>
+				</el>
+			</ROOT>
+		</advancedConfig>
+	</sheets>
+</T3DataStructure>

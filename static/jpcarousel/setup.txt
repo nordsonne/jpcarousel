@@ -1,0 +1,47 @@
+
+# Setup
+plugin.tx_jpcarousel_pi1 {
+   templateFile = {$plugin.tx_jpcarousel_pi1.file}
+   pic = IMAGE
+   pic {
+    file =
+    file.maxW = {$plugin.tx_jpcarousel_pi1.itemMaxW}
+    file.maxH = {$plugin.tx_jpcarousel_pi1.itemMaxH}
+    file.popup_maxW = {$plugin.tx_jpcarousel_pi1.popup_maxW}
+    file.popup_maxH = {$plugin.tx_jpcarousel_pi1.popup_maxH}
+    }
+   carouselWidth = {$plugin.tx_jpcarousel_pi1.carouselWidth}
+   carouselHeight = {$plugin.tx_jpcarousel_pi1.carouselHeight}
+   carouselBgColor = {$plugin.tx_jpcarousel_pi1.carouselBgColor}
+   popup = {$plugin.tx_jpcarousel_pi1.popup}
+   useButtons = {$plugin.tx_jpcarousel_pi1.useButtons}
+   altTitlePreviousButton = {$plugin.tx_jpcarousel_pi1.altTitlePreviousButton}
+   altTitleNextButton = {$plugin.tx_jpcarousel_pi1.altTitleNextButton}
+   showTitle = {$plugin.tx_jpcarousel_pi1.showTitle}
+   pathToJquery = {$plugin.tx_jpcarousel_pi1.pathToJquery}
+   pathToJPcarouselJS = {$plugin.tx_jpcarousel_pi1.pathToJPcarouselJS}
+   pathToJPcarouselCSS = {$plugin.tx_jpcarousel_pi1.pathToJPcarouselCSS}
+   inlineJS = {$plugin.tx_jpcarousel_pi1.inlineJS}
+   inlineCSS = {$plugin.tx_jpcarousel_pi1.inlineCSS}
+   autoPlay = {$plugin.tx_jpcarousel_pi1.autoPlay}
+   pagination = {$plugin.tx_jpcarousel_pi1.pagination}
+   pauseDuration = {$plugin.tx_jpcarousel_pi1.pauseDuration}
+   speed = {$plugin.tx_jpcarousel_pi1.speed}
+   fx = {$plugin.tx_jpcarousel_pi1.fx}
+   easing = {$plugin.tx_jpcarousel_pi1.easing}
+   direction = {$plugin.tx_jpcarousel_pi1.direction}
+   circular = {$plugin.tx_jpcarousel_pi1.circular}
+   infinite = {$plugin.tx_jpcarousel_pi1.infinite}
+   pauseOnHover = {$plugin.tx_jpcarousel_pi1.pauseOnHover}
+   visible = {$plugin.tx_jpcarousel_pi1.visible}
+   start = {$plugin.tx_jpcarousel_pi1.start}
+   scroll = {$plugin.tx_jpcarousel_pi1.scroll}
+   beforeStart = {$plugin.tx_jpcarousel_pi1.beforeStart}
+   afterEnd = {$plugin.tx_jpcarousel_pi1.afterEnd}
+   extraConfig = {$plugin.tx_jpcarousel_pi1.extraConfig}
+   extraJs = {$plugin.tx_jpcarousel_pi1.extraJs}
+   buttonsScroll = {$plugin.tx_jpcarousel_pi1.buttonsScroll}
+   buttonsSpeed = {$plugin.tx_jpcarousel_pi1.buttonsSpeed}
+   buttonsEasing = {$plugin.tx_jpcarousel_pi1.buttonsEasing}
+}
+

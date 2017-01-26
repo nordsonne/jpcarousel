@@ -1,0 +1,124 @@
+/*
+***********************************************************
+Title: jcarousel.css
+Author: Jacco van der Post - www.TYPO3-webdesign.nl
+Date: june 2010
+***********************************************************
+*/
+
+.carouselContainer {
+    padding: 0 5px;
+    /* width, height and background-color are determined in constant editor */
+    -moz-box-shadow:0px 0px 5px #ccc;
+    -webkit-box-shadow: 0px 0px 5px #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+    position: relative;
+}
+
+.carouselContainer :focus {
+    outline: 0; /* dont give ugly outline border arround images */
+}
+
+.carousel {
+    color: #f0f0f0;
+    margin-left:20px;
+}
+
+.jpcarousel {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jpcarousel li {
+    display: block;
+    list-style: none;
+    padding: 9px;
+    border:1px solid #cccccc;
+    background:white;
+    margin:12px 7px 15px 7px;
+    float: left;
+    overflow: hidden;
+}
+
+.carousel img {
+    border: 0;
+}
+
+/* we give the dummy img clear.gif a background, to show nice buttons */
+.carouselbuttons a img {
+    background: url('../img/miscellaneous_sprite.png') no-repeat transparent;
+    padding: 0;
+    height: 45px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+}
+
+.carouselbuttons a.carouselprev img {
+    left:-22px;
+    background-position: 0 0;
+}
+
+.carouselbuttons a.carouselprev img:hover {
+    background-position: 0 -50px;
+}
+
+.carouselbuttons a.carouselnext img {
+    background-position: -50px 0;
+    right:-22px;
+}
+
+.carouselbuttons a.carouselnext img:hover {
+    background-position: -50px -50px;
+}
+
+h3.carousel_title {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px; /* vertical center the title a bit */
+    font-style: italic;
+    text-align: center;
+    display: block; /* needed for centering title */
+}
+
+.carouselcaption {
+    margin-top: -20px;
+    color: white;
+
+}
+
+.carouselcaption span {
+    padding: 4px 8px 4px 8px;
+    background: url('../img/caption_bg.png') repeat;
+
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    background: url(../img/miscellaneous_sprite.png) 0 -300px no-repeat transparent;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    display: inline-block;
+}
+
+.pagination a.selected {
+    background-position: -25px -300px;
+    cursor: default;
+}
+
+.pagination a span {
+    display: none;
+}
+

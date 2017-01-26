@@ -1,0 +1,2 @@
+script={$pathToJcarouselLite}
+components=Core,EffectsCore,Easing

@@ -1,0 +1,148 @@
+/*
+***********************************************************
+Title: example_css_tt_news.css
+Author: Jacco van der Post - www.TYPO3-webdesign.nl
+Date: december 2011
+
+See manual
+***********************************************************
+*/
+
+.carouselContainer {
+    padding: 10px 10px;
+    /* width, height and background-color are determined in constant editor */
+    -moz-box-shadow:0px 0px 5px #aaa;
+    -webkit-box-shadow: 0px 0px 5px #aaa;
+    box-shadow: 0px 0px 5px #aaa;
+    position: relative;
+}
+
+.carouselContainer :focus {
+    outline: 0; /* dont give ugly outline border arround images */
+}
+
+.carousel {
+    color: #f0f0f0;
+    margin-left:10px;
+}
+
+.jpcarousel {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jpcarousel li {
+    display: block;
+    list-style: none;
+    background:white;
+    margin:10px 0 0 0;
+    float: left;
+    overflow: hidden;
+}
+
+.carousel img {
+    border: 0;
+}
+
+/* we give the dummy img clear.gif a background, to show nice buttons */
+.carouselbuttons a img {
+    background: url('../img/miscellaneous_sprite.png') no-repeat transparent;
+    padding: 0;
+    height: 45px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+}
+
+.carouselbuttons a.carouselprev img {
+    left:-22px;
+    background-position: 0 0;
+}
+
+.carouselbuttons a.carouselprev img:hover {
+    background-position: 0 -50px;
+}
+
+.carouselbuttons a.carouselnext img {
+    background-position: -50px 0;
+    right:-22px;
+}
+
+.carouselbuttons a.carouselnext img:hover {
+    background-position: -50px -50px;
+}
+
+h3.carousel_title {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px; /* vertical center the title a bit */
+    font-style: italic;
+    text-align: center;
+    display: block; /* needed for centering title */
+}
+
+.carouselcaption {
+    margin-top: -20px;
+    color: white;
+
+}
+
+.carouselcaption span {
+    padding: 4px 8px 4px 8px;
+    background: url('../img/caption_bg.png') repeat;
+
+}
+
+.pagination {
+    position:absolute;
+    z-index:100;
+    right:30px;
+    bottom:30px;
+}
+
+.pagination a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    position: relative;
+    color:yellow;
+    margin-right:2px;
+    outline: none;
+}
+
+.pagination a:hover {
+    background-color: #999;
+}
+
+.pagination a.selected {
+    color:white;
+    background-color: #666;
+}
+
+.pagination a span {
+}
+
+.news-latest-item-text {
+    background:url('../img/popupBG.png') repeat;
+    width: 640px;
+    height:130px;
+    position: relative;
+    margin-top:-130px;
+    padding:20px 20px 10px 20px;
+}
+
+.news-latest-item-text h2 a {
+    color:white;
+    font-size:24px;
+}

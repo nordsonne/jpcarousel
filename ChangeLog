@@ -1,0 +1,81 @@
+2.1.0
+- TYPO3 6.0 compatibility
+- Fixed forge bugs #43413, #43758, #43771, #44720
+- Upgraded to Caroufredsel 6.2.0, allows for more advanced configuration. 
+
+2.0.3
+- Fixed a bug. Sometimes clear.gif at the buttons was not loaded. This is changed in the class.
+- Update jQuery to 1.8.2. 
+- jSwing renamed to Swing since jQuery 1.7+
+
+2.0.2
+- changed $ in jQuery to avoid javascript conflicts 
+
+2.0.1
+- Fixed a bug which prevented correct number of items visible and items scrolling on vertical sliding. Also the height of the (vertical) carousel was affected by this.
+- Added infinite option
+
+2.0.0
+- upgrade to Caroufredsel 5.3.0
+- lot's of new Caroufredsel config possibilities, see http://caroufredsel.frebsite.nl/code-examples/configuration.php
+- pagination is added
+- fx slide transition is added, like fade, crossfade, cover
+- Advanced configuration possible now in extra flexform tab, see constant reference
+- Added an example of a slick tt_news slider
+- iE7 is still supported
+- beforeStart and afterEnd now work
+- Extra config possible see constant reference and Fred's site for examples
+- Additional custom jQuery possible see constant reference and Fred's site 
+
+1.2.2
+- Small update manual
+
+1.2.1
+- 1.2.0 did not get uploaded correctly on TER 
+
+1.2.0
+- Added support for Perfect Lightbox, requested by Emile Blume
+- Added support for sk_fancybox, requested by Andre Zitterbart
+- All JS and CSS is now included via the pagerenderer and compressed
+- All JS now is loaded in the footer, requested by Riccardo DeContardi
+- Fixed HTML valid code ending IMG tag of prev and next button with / , reported by  Emile Blume and Dawid Szymcak
+- Buttons of multiple carousels on 1 page now operate independent
+- Sizes of multiple carousels on 1 page and the images can now be different
+- Flexform option added for multiple carousels on 1 page to not load again general CSS
+- Inline style CSS for container moved to head
+- External list items like tt_news do not need unique id anymore in the template, suggested by Alexander Grein (thx for your thoughts and your own examples on this!)
+- Check FAQ before upgrade
+
+1.1.1
+- Small update manual
+
+1.1.0
+- Images can now have links
+- Multiple carousels can be placed on 1 page
+- Captions added
+- Fixed a bug which did not show alts and titles on image carousels without click enlarge. 
+- Check FAQ before upgrade
+
+1.0.5
+- Bug fix. Locallang.xml had a syntax error, reported by Janosch Skrobek.
+- Improved German translation, thx to Janosch Skrobek.
+
+1.0.4
+- German translation added, thx to Andi Becker
+- Cleaned php class of some hidden characters which caused problems on Apple, thx to Christian Frisch and Janosch Skrobek
+
+1.0.3
+- Small update of manual 
+
+1.0.2
+- NoConflict mode for jQuery inserted in head, thx to Sébastian Delcroix
+- Update manual
+- French translation added, thx to Sébastian Delcroix
+- Polish translation added, thx to Leszek .
+
+1.0.1
+- Setting status to beta, small manual adjustments
+
+1.0.0
+- Initial release
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>database</type>
+        <description>Language labels for database tables/fields belonging to extension 'jpcarousel'</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="tt_content.list_type_pi1">jpCarousel</label>
+            <label index="tx_jpcarousel_carousel">Carousel</label>
+            <label index="tx_jpcarousel_carousel.title">Title</label>
+            <label index="tx_jpcarousel_carousel.image">Images</label>
+            <label index="tx_jpcarousel_carousel.alttext">Image ALT text</label>
+            <label index="tx_jpcarousel_carousel.titletext">Image title text</label>
+        </languageKey>
+        <languageKey index="nl" type="array">
+            <label index="tt_content.list_type_pi1">jpCarousel</label>
+            <label index="tx_jpcarousel_carousel">Carousel</label>
+            <label index="tx_jpcarousel_carousel.title">Titel</label>
+            <label index="tx_jpcarousel_carousel.image">Afbeeldingen</label>
+            <label index="tx_jpcarousel_carousel.alttext">Afbeelding ALT tekst</label>
+            <label index="tx_jpcarousel_carousel.titletext">Afbeelding titel tekst</label>
+        </languageKey>
+        <languageKey index="fr" type="array">
+            <label index="tx_jpcarousel_carousel">Carrousel d'images ou d'éléments de contenu</label>
+            <label index="tx_jpcarousel_carousel.title">Titre</label>
+            <label index="tx_jpcarousel_carousel.image">Images</label>
+            <label index="tx_jpcarousel_carousel.alttext">Texte alternatif des images</label>
+            <label index="tx_jpcarousel_carousel.titletext">Texte d'infobulle des images</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="tt_content.list_type_pi1">jpCarousel</label>
+            <label index="tx_jpcarousel_carousel">Carousel</label>
+            <label index="tx_jpcarousel_carousel.title">Titel</label>
+            <label index="tx_jpcarousel_carousel.image">Bilder</label>
+            <label index="tx_jpcarousel_carousel.alttext">Alternativtext des Bildest</label>
+            <label index="tx_jpcarousel_carousel.titletext">Titeltext des Bildes</label>
+        </languageKey>
+    </data>
+</T3locallang>

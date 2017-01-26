@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>module</type>
+        <description>Language labels for extension 'jpcarousel'</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="pi1_title">jpCarousel</label>
+            <label index="pi1_plus_wiz_description">Adds carousel for images, content elements or list items of extensions.</label>
+            <label index="carouselWidth">Width carousel container in pixels</label>
+            <label index="carouselHeight">Height carousel container in pixels</label>
+            <label index="carouselBgColor">Background-color of the carousel</label>
+            <label index="itemMaxH">Slide item max height pixels</label>
+            <label index="itemMaxW">Slide item max width pixels</label>
+            <label index="popup_maxH">Popup image max height pixels</label>
+            <label index="popup_maxW">Popup image max width pixels</label>
+            <label index="popup">Activate click enlarge: Click enlarges an image in a Lightbox window if extension rzcolorbox or pmkshadowbox is installed, else shows image in a Javascript popup window.</label>
+            <label index="useButtons">Show buttons: Show buttons to control jpCarousel.</label>
+            <label index="altTitlePreviousButton">Alt / Title Previous Button: Shows this text on the tooltip when hovering over the previous button.</label>
+            <label index="altTitleNextButton">Alt / Title Next Button: Shows this text on the tooltip when hovering over the next button.</label>
+            <label index="showTitle">Show Carousel title: This shows the Title of the jCarousel record.</label>
+            <label index="pathToJquery">Path to jQuery: Delete when jQuery is allready loaded. When using T3 jQuery, this will automatically not be used. When using T3 jQuery, remember to proces T3 jQuery, merge and create the custom jQuery lib.</label>
+            <label index="autoPlay">Autoplay:Should the carousel slide automatically.</label>
+            <label index="pagination">Pagination:Should the carousel show pagination buttons.</label>
+            <label index="pauseDuration">Autoplay pause duration: The amount of milliseconds before the carousel will be scrolled again.</label>
+            <label index="speed">Animation speed in milliseconds: The duration of the animation in milliseconds.</label>
+            <label index="fx">Transition effect: Use dropdown. Not guaranteed that they will work with all other options.</label>
+            <label index="easing">Easing method for sliding: Use dropdown below to play with the effects. See all effect examples live at http://gsgd.co.uk/sandbox/jquery/easing/</label>
+            <label index="direction">Direction of the carousel: You might want to adjust the carouselWidth and carouselHeight when choosing up or down.</label>
+            <label index="circular">Circular sliding: Setting it to true enables circular navigation. This means, if clicking "next" after reaching the last element, the carousel will automatically slide to the first element and vice versa.</label>
+            <label index="infinite">Infinite sliding: Determines whether the carousel should be infinite. Note: It is possible to create a non-circular, infinite carousel, but it is not possible to create a circular, non-infinite carousel.</label>
+            <label index="pauseOnHover">Pause on hover: Carousel pauses on mouse hover, if the carousel scrolls automatically.</label>
+            <label index="visible">Number of visible items: This specifies the number of items visible at all times within the carousel.</label>
+            <label index="start">Start with item: From which item the carousel should start. The first item in the carousel is 0 (default).</label>
+            <label index="scroll">Auto scroll number: The number of items to scroll. If "0", the number of visibleItems is taken.</label>
+            <label index="beforeStart">Before start: Additional function that is called right before the carousel starts scrolling.</label>
+            <label index="afterEnd">After end: Additional function that is called right after the carousel stops scrolling.</label>
+            <label index="extraConfig">Additional configuration: See http://caroufredsel.frebsite.nl/configuration.php Start code with ,</label>
+            <label index="extraJs">Additional jQuery</label>
+            <label index="buttonsScroll">Buttons scroll number: The number of items to scroll when clicking a button.</label>
+            <label index="buttonsSpeed">Buttons animation speed in milliseconds</label>
+            <label index="buttonsEasing">Buttons easing methode</label>
+            <label index="pathToJPcarouselJS">Path to JS file</label>
+            <label index="pathToJPcarouselCSS">Path to CSS file</label>
+            <label index="pathToJPcarouselHTML">Path to template file</label>
+            <label index="pathToButtons">Path to folder with buttons</label>
+            <label index="inlineJS">Include the generated jpcarousel JS inline in the footer</label>
+            <label index="inlineCSS">Include the generated jpcarousel CSS inline</label>
+
+
+
+        </languageKey>
+        <languageKey index="nl" type="array">
+            <label index="pi1_title">jpCarousel</label>
+            <label index="pi1_plus_wiz_description">Voegt een carousel toe voor afbeeldingen, content elementen of list items van extensies.</label>
+            <label index="carouselWidth">Breedte carousel container in px</label>
+            <label index="carouselHeight">Hoogte carousel container in px</label>
+            <label index="carouselBgColor">Achtergrond kleur van de carousel</label>
+            <label index="itemMaxH">Slide item max hoogte pixels</label>
+            <label index="itemMaxW">Slide item max breedte pixels</label>
+            <label index="popup_maxH">Popup afbeelding max hoogte pixels</label>
+            <label index="popup_maxW">Popup afbeelding max breedte pixels</label>
+            <label index="popup">Activeer klik vergroot: Klik vergroot een afbeelding in een Lightbox venster als de extensie rzcolorbox of pmkshadowbox is geinstalleerd, toont anders afbeelding in Javascript popup venster.</label>
+            <label index="useButtons">Toon knoppen: Toon knoppen om jpCarousel te besturen.</label>
+            <label index="altTitlePreviousButton">Alt / Title Vorige Knop: Toont deze tekst als tooltip bij het hoveren over de Vorige knop.</label>
+            <label index="altTitleNextButton">Alt / Title Volgende Knop: Toont deze tekst als tooltip bij het hoveren over de Volgende knop.</label>
+            <label index="showTitle">Toon Carousel titel: Dit toont de titel van het Carousel record.</label>
+            <label index="pathToJquery">Pad naar jQuery: Verwijder als jQuery al geladen is. Bij gebruik van T3 jQuery, wordt dit automatisch niet gebruikt. Bij gebruik van T3 jQuery, denk aan het processen van T3 jQuery, merge and create de custom jQuery lib.</label>
+            <label index="pagination">Paginering:Toon paginering buttons.</label>
+            <label index="autoPlay">Autoplay:Dient de carousel automatisch te sliden?</label>
+            <label index="pauseDuration">Autoplay pause duur: Tijd in milliseconden voordat de carousel weer scrolt.</label>
+            <label index="speed">Animatie snelheid in milliseconden: De duur van de animatie in milliseconden.</label>
+            <label index="fx">Transitie effect: Zie dropdown. Werkt niet altijd in combi met alle andere opties.</label>
+            <label index="easing">Easing methode voor sliding: Gebruik dropdown om te spelen met de effecten. Zie alle effecten als voorbeeld bij http://gsgd.co.uk/sandbox/jquery/easing/</label>
+            <label index="direction">Richting van de carousel: Wellicht wil je de carouselWidth en carouselHeight ook aanpassen bij keuze voor up of down.</label>
+            <label index="circular">Circulaire sliding: Na het laatste element bereikt te hebben begint de carousel automatisch weer met het eerste element en vice versa.</label>
+            <label index="pauseOnHover">Pause on hover: Carousel pauseert bij mouse hover, indien de carousel automatisch scrolt.</label>
+            <label index="visible">Aantal zichtbare items: Dit specificeert het aantal items dat immer zichtbaar is.</label>
+            <label index="start">Start met item: Met welk item dient de carousel te beginnen. Het eerste item in de carousel is 0 (standaard).</label>
+            <label index="scroll">Auto scroll aantal: Het aantal items dat moet scrollen. Indien "0", wordt het aantal van visibleItems genomen.</label>
+            <label index="beforeStart">Voor start: Extra functie die aangeroepen wordt direct voordat de carousel start met scrollen.</label>
+            <label index="afterEnd">Na stop: Extra functie die aangeroepen wordt direct nadat de carousel stopt met scrollen.</label>
+            <label index="extraConfig">Extra configuratie: Zie http://caroufredsel.frebsite.nl/configuration.php Begin code met ,</label>
+            <label index="extraJs">Extra jQuery</label>
+            <label index="buttonsScroll">Knoppen scroll aantal: Het aantal items dat moet scrollen na het klikken op een knop.</label>
+            <label index="buttonsSpeed">Knoppen animatie snelheid in milliseconden</label>
+            <label index="buttonsEasing">Knoppen easing methode</label>
+            <label index="pathToJPcarouselJS">Pad naar JS bestand</label>
+            <label index="pathToJPcarouselCSS">Pad naar CSS bestand</label>
+            <label index="pathToJPcarouselHTML">Pad naar HTML bestand</label>
+            <label index="pathToButtons">Pad naar folder met knoppen</label>
+            <label index="inlineJS">Zet de gegenereerde jpcarousel JS inline in de footer</label>
+            <label index="inlineCSS">Zet de gegenereerde jpcarousel CSS inline</label>
+        </languageKey>
+
+
+        <languageKey index="pl" type="array">
+            <label index="pi1_title">jpkaruzela</label>
+            <label index="pi1_plus_wiz_description">Dodaje karuzele</label>
+            <label index="carouselWidth">Szerokość prostokąta z karuzelą</label>
+            <label index="carouselHeight">Wysokość prostokąta z karuzelą</label>
+            <label index="carouselBgColor">Kolor tłą karuzeli</label>
+            <label index="itemMaxH">Maksymalna wysokość obrazka</label>
+            <label index="itemMaxW">Maksymalna szerokość obrazka</label>
+            <label index="popup_maxH">Maksymalna szerokość obrazką w powiększeniu</label>
+            <label index="popup_maxW">Maksymalna wysokość obrazka w powiększeniu</label>
+            <label index="popup">Uaktywnij powiększenie</label>
+            <label index="useButtons">Pokaż przyciski</label>
+            <label index="altTitlePreviousButton">Alt / Tytuł dla przycisku karuzeli (poprzedni)</label>
+            <label index="altTitleNextButton">Alt / Tytuł dla przycisku karuzeli (następny)</label>
+            <label index="showTitle">Pokaż tytuł karuzeli</label>
+            <label index="pathToJquery">Ścieżka do Jquery</label>
+            <label index="autoPlay">Autostart</label>
+            <label index="pauseDuration">Czas wstrzymania autostartu</label>
+            <label index="speed">Szybkość animacji</label>
+            <label index="easing">Łagodzenie przesuwania</label>
+            <label index="direction">Kierunek karuzeli</label>
+            <label index="circular">Powrót do pierwszego elementu po przejechaniu wszystkich</label>
+            <label index="pauseOnHover">Zatrzymaj po najechaniu myszką</label>
+            <label index="visible">Ilość widocznych elementów</label>
+            <label index="start">Zacznij obrazkiem</label>
+            <label index="scroll">Ilosc elementów auto wyświetlania</label>
+            <label index="buttonsScroll">Ilość elementów które zostaną przesunięte po kliknięciu w przycisk</label>
+            <label index="buttonsSpeed">Szybkość animacji przycisków</label>
+            <label index="buttonsEasing">Metoda wygładzania przycisków</label>
+            <label index="pathToJPcarouselJS">Ścieżka do pliku JS</label>
+            <label index="pathToJPcarouselCSS">Ścieżka do pliku CSS</label>
+            <label index="pathToJPcarouselHTML">Ścieżka do template</label>
+            <label index="pathToButtons">Ścieżka do folderu z grafikami</label>
+        </languageKey>
+
+        <languageKey index="fr" type="array">
+            <label index="pi1_plus_wiz_description">Ajoute un carrousel d'images, d'éléments de contenu ou d'éléments d'extension</label>
+            <label index="carouselWidth">Largeur du carrousel (en pixels)</label>
+            <label index="carouselHeight">Hauteur du carrousel (en pixels)</label>
+            <label index="carouselBgColor">Couleur de fond du carrousel</label>
+            <label index="itemMaxH">Hauteur maximum d'un élément (en pixels)</label>
+            <label index="itemMaxW">Largeur maximum d'un élément (en pixels)</label>
+            <label index="popup_maxH">Hauteur maximum de la lightbox/popup (en pixels)</label>
+            <label index="popup_maxW">Largeur maximum de la lightbox/popup (en pixels)</label>
+            <label index="popup">Cliquer pour agrandir : affiche l'élément cliqué dans une lightbox si l'extension rzcolorbox ou pmkshadowbox est installé, sinon dans une fenêtre de type popup.</label>
+            <label index="useButtons">Afficher les boutons de contrôle du carrousel.</label>
+            <label index="altTitlePreviousButton">Attributs &quot;alt&quot; et &quot;title&quot; du bouton &quot;Précédent&quot; : affiche ce texte en infobulle lors du survol du bouton &quot;Précédent&quot;.</label>
+            <label index="altTitleNextButton">Attributs &quot;alt&quot; et &quot;title&quot; du bouton &quot;Suivant&quot; : affiche ce texte en infobulle lors du survol du bouton &quot;Suivant&quot;.</label>
+            <label index="showTitle">Afficher le titre du carrousel</label>
+            <label index="pathToJquery">Chemin vers jQuery : à supprimer quand jQuery est déjà chargé. Si vous utilisez T3 jQuery, ce chemin ne sera pas pris en compte. N'oubliez pas de procéder à l'inspection de jpcarousel par T3 jQuery, de fusionner les dépendances et de créer la librairie jQuery personnalisée.</label>
+            <label index="autoPlay">Lecture automatique : indique si le carrousel doit démarrer automatiquement.</label>
+            <label index="pauseDuration">Durée de la pause en lecture automatique : le temps (en ms) avant chaque mouvement du carrousel.</label>
+            <label index="speed">Durée de l'animation : le temps (en ms) d'un mouvement du carrousel.</label>
+            <label index="easing">Effet de mouvement : choisissez un effet dans la liste ci-dessous. Les exemples sont disponibles sur http://gsgd.co.uk/sandbox/jquery/easing/</label>
+            <label index="direction">Sens du mouvement : en cas de mouvement vers le haut ou le bas, vous devrez peut-être ajuster la largeur et la hauteur du carrousel.</label>
+            <label index="circular">Mouvement en boucle : si activé, cliquer sur &quot;Suivant&quot; après avoir atteint le dernier élément, ramènera le carrousel au premier élément, et vice et versa.</label>
+            <label index="pauseOnHover">Pause au survol : si le carrousel est en lecture automatique, celui se met en pause lorsque la souris survole un élément.</label>
+            <label index="visible">Nombre d'éléments affichés : indique le nombre d'éléments visibles dans le carrousel à chaque arrêt.</label>
+            <label index="start">Elément de départ : indique quel élément est le premier (au chargement) du carrousel (position 0 par défaut)</label>
+            <label index="scroll">Nombre d'éléments déplacés : indique le nombre d'élements déplacés lors d'un mouvement de carrousel. Si &quot;0&quot;, le nombre d'éléments visibles sera utilisé.</label>
+            <label index="buttonsScroll">Nombre d'éléments déplacés (par clic) : indique le nombre d'élements déplacés lors d'un mouvement de carrousel initié par un clic sur l'un des boutons &quot;Précédent&quot; ou &quot;Suivant&quot;.</label>
+            <label index="buttonsSpeed">Durée de l'animation (par clic) : le temps (en ms) d'un mouvement du carrousel ors d'un mouvement de carrousel initié par un clic sur l'un des boutons &quot;Précédent&quot; ou &quot;Suivant&quot;.</label>
+            <label index="buttonsEasing">Effet de mouvement (par clic)</label>
+            <label index="pathToJPcarouselJS">Chemin vers le fichier Javascript</label>
+            <label index="pathToJPcarouselCSS">Chemin vers la feuille de style</label>
+            <label index="pathToJPcarouselHTML">Chemin vers le gabarit HTML</label>
+            <label index="pathToButtons">Chemin vers le dossier des boutons</label>
+        </languageKey>
+
+        <languageKey index="de" type="array">
+            <label index="pi1_title">jpCarousel</label>
+            <label index="pi1_plus_wiz_description">Fügt Karussell für Bilder, Inhalte oder Listenelemente von Erweiterungen (z.B. tt_news) ein.</label>
+            <label index="carouselWidth">Breite des Karussell Containers in Pixel</label>
+            <label index="carouselHeight">Höhe des Karussell Containers in Pixel</label>
+            <label index="carouselBgColor">Hintergrundfarbe des Karussells</label>
+            <label index="itemMaxH">Slide Element max Höhe in Pixel</label>
+            <label index="itemMaxW">Slide Element max Breite in Pixel</label>
+            <label index="popup_maxH">Popup Bild max Höhe in Pixel</label>
+            <label index="popup_maxW">Popup Bild max Breite in Pixel</label>
+            <label index="popup">Klick-Vergrößern aktivieren: Wenn eine Lightbox Erweiterung wie rzcolorbox oder pmkshadowbox installiert ist wird das Bild in der Lightbox angezeigt, sonst zeigt es das Bild in einem Javascript Popup-Fenster.</label>
+            <label index="useButtons">Show Buttons: Zeige Buttons zur Steuerung von jpCarousel.</label>
+            <label index="altTitlePreviousButton">Alt / Titel Zurück-Button: Zeigt diesen Text auf dem Tooltip beim Überfahren des "Zurück"-Buttons.</label>
+            <label index="altTitleNextButton"> Alt / Titel Weiter-Button: Zeigt diesen Text auf den Tooltip beim Überfahren des "Weiter"-Buttons.</label>
+            <label index="showTitle">Karussell-Titel anzeigen:Zeigt den Titel des jpCarousel-Elements.</label>
+            <label index="pathToJquery">Pfad zu jQuery: Löschen, wenn jQuery schon implementiert ist. Bei der Verwendung von T3 jQuery wird dies automatisch deaktiviert. Bei der Verwendung von T3 jQuery bitte nicht vergessenim T§ jQuery-Modul die JS-Dateien zusammenzuführen und eine benutzerdefinierte jQuery-Lib zu erstellen.</label>
+            <label index="autoPlay">Autoplay: Slide automatisch ausführen.</label>
+            <label index="pauseDuration">Autoplay Pausendauer: Der Betrag von Millisekunden, bevor das Karussell wieder verschoben wird.</label>
+            <label index="speed">Animations Geschwindigkeit in Millisekunden: Die Dauer der Animation in Millisekunden.</label>
+            <label index="easing">Methoden für das Easing: Benutzen Sie das Dropdown um mit den Effekten zu spielen. Alle Effekte können live bei http://gsgd.co.uk/sandbox/jquery/easing/ betrachtet werden</label>
+            <label index="direction">Richtung des Karussells: Verändern Sie die Werte carouselWidth und carouselHeight je nach vertikaler oder horizontaler Ausrichtung des Karussells.</label>
+            <label index="circular">Endlosschleife: Aktiviert die Endlosschleife. Beim Klick auf "Weiter" nach Erreichen des letzten Elements springt das Karussell automatisch auf das erste Element zurück und umgekehrt.</label>
+            <label index="pauseOnHover">Pause bei Mouseover: Wenn Autoplay aktiviert ist stoppt das Karussel bei Mouseover.</label>
+            <label index="visible">Anzahl der sichtbaren Elemente: Anzahl der gleichzeitig sichtbaren Elemente. Achtung, die addierte Breite der sichtbaren Elemente darf nicht die Gesaamtbreite des Karussels überschreiten.</label>
+            <label index="start">Start mit Element Nr: Von welchem Punkt das Karussell beginnen soll. Das erste Element im Karussell ist 0 (Standard).</label>
+            <label index="scroll">Autoscroll Schrittweite: Die Anzahl der zu scrollenden Elemente. Wenn "0", wird "visibleItems" verwendet.</label>
+            <label index="buttonsScroll">Buttonclick Schrittweite: Die Anzahl der zu scrollenden Elemente, wenn Sie auf Zurück oder Weiter klicken.</label>
+            <label index="buttonsSpeed">Buttonclick Animationsgeschwindigkeit in Millisekunden</label>
+            <label index="buttonsEasing">Buttonclick Easing Methode</label>
+            <label index="pathToJPcarouselJS">Pfad zur JS-Datei</label>
+            <label index="pathToJPcarouselCSS">Pfad zur CSS-Datei</label>
+            <label index="pathToJPcarouselHTML">Pfad zur HTML Template-Datei</label>
+            <label index="pathToButtons">Pfad zum Verzeichnis mit den Buttons</label>
+        </languageKey>
+    </data>
+</T3locallang>
