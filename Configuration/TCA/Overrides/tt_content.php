@@ -7,7 +7,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['jpcarous
     [
         'LLL:EXT:jpcarousel/locallang_db.xml:tt_content.list_type_pi1',
         'jpcarousel_pi1',
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('jpcarousel') . 'ext_icon.gif'
+        'EXT:jpcarousel/ext_icon.gif'
     ],
     'list_type',
     'jpcarousel'

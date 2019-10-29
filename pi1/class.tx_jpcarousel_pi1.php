@@ -34,10 +34,13 @@
  *
  * @author    Jacco van der Post <jacco@id-internetservices.com>
  */
+
+use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\Plugin\AbstractPlugin;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Frontend\Resource\FilePathSanitizer;
 
 class tx_jpcarousel_pi1 extends AbstractPlugin
 {
@@ -46,7 +49,7 @@ class tx_jpcarousel_pi1 extends AbstractPlugin
     public $extKey = 'jpcarousel'; // The extension key.
     public $pi_checkCHash = true;
 
-    protected $lConf = '';
+    protected $lConf = [];
 
     protected $ulStart = '';
 
@@ -75,17 +78,17 @@ class tx_jpcarousel_pi1 extends AbstractPlugin
         $this->pi_initPIflexForm();
 
         // Check if extension t3jQuery is loaded
-        if (ExtensionManagementUtility::isLoaded('t3jquery')) {
-            require_once(ExtensionManagementUtility::extPath('t3jquery') . 'class.tx_t3jquery.php');
-        }
-        // If t3jQuery is loaded and the custom Library has been created
-        if (T3JQUERY === true) {
-            tx_t3jquery::addJqJS();
-        } else {
-            // if none of the previous is true, and path is filled in include own library
-            $includeOwnJqueryLib = $this->conf['pathToJquery'] ? true : false;
-            //$header = '<script src="'.$GLOBALS['TSFE']->tmpl->getFileName($this->conf['pathToJquery']).'" type="text/javascript"></script>';
-        }
+    //    if (ExtensionManagementUtility::isLoaded('t3jquery')) {
+    //        require_once(ExtensionManagementUtility::extPath('t3jquery') . 'class.tx_t3jquery.php');
+    //    }
+    //    // If t3jQuery is loaded and the custom Library has been created
+    //    if (T3JQUERY === true) {
+    //        tx_t3jquery::addJqJS();
+    //    } else {
+    //        // if none of the previous is true, and path is filled in include own library
+           $includeOwnJqueryLib = $this->conf['pathToJquery'] ? true : false;
+    //        //$header = '<script src="'.$GLOBALS['TSFE']->tmpl->getFileName($this->conf['pathToJquery']).'" type="text/javascript"></script>';
+    //    }
 
         //Create a new ID voor this carousel content element, to allow multiple carousels on a page
         $currentCeID = 'c' . $this->cObj->data['uid'];
@@ -97,26 +100,29 @@ class tx_jpcarousel_pi1 extends AbstractPlugin
         if (isset($this->lConf['pathToJPcarouselHTML']) && !empty($this->lConf['pathToJPcarouselHTML'])) {
             $pathToJPcarouselHTML = $this->lConf['pathToJPcarouselHTML'];
         }
-        $templateHtml = $this->cObj->fileResource($pathToJPcarouselHTML);
+        try {
+            $file = GeneralUtility::makeInstance(FilePathSanitizer::class)->sanitize((string)$pathToJPcarouselHTML);
+        } catch (\TYPO3\CMS\Core\Resource\Exception $e) {
+            $file = null;
+        }
+        $templateHtml = file_get_contents($file);
 
         // Extract subparts from the template
-        $subparts['template'] = $this->cObj->getSubpart($templateHtml, '###TEMPLATE###');
-        $subparts['item'] = $this->cObj->getSubpart($subparts['template'], '###ITEM###');
-        $subparts['control'] = $this->cObj->getSubpart($subparts['template'], '###CONTROL###');
-        $subparts['containerprops'] = $this->cObj->getSubpart($subparts['template'], '###CONTAINERPROPERTIES###');
+        $subparts['template'] = $this->templateService->getSubpart($templateHtml, '###TEMPLATE###');
+        $subparts['item'] = $this->templateService->getSubpart($subparts['template'], '###ITEM###');
+        $subparts['control'] = $this->templateService->getSubpart($subparts['template'], '###CONTROL###');
+        $subparts['containerprops'] = $this->templateService->getSubpart($subparts['template'], '###CONTAINERPROPERTIES###');
 
         $piFlexForm = $this->cObj->data['pi_flexform'];
 
-        // Read the flexform and throw the data in array lconf
         foreach ($piFlexForm['data'] as $sheet => $data) {
-            // echo "<br /><b>".$sheet."</b><br />";
             foreach ($data as $lang => $value) {
                 foreach ($value as $key => $val) {
                     $this->lConf[$key] = $this->pi_getFFvalue($piFlexForm, $key, $sheet);
-                    //echo $key.":".$this->lConf[$key]."<br />";
                 }
             }
         }
+        $this->getFlexformFields();
 
         // Set the configuration variables for the carouselscript
         $visible = $this->conf['visible'];
@@ -413,15 +419,15 @@ HEREDOC;
                     //echo $singleImageLink.'<br>';
                     // Fill marker array
                     // Put imgTSConfig in submarker with IMAGE function to make it an image and wrap with <li></li>
-                    $markerArrayItem['###FIELD_ITEM###'] = '<li>' . $cObj->typoLink($this->cObj->IMAGE($imgTSConfig), $tConf) . $caption[$row] . '</li>';
+                    $markerArrayItem['###FIELD_ITEM###'] = '<li>' . $cObj->typoLink($this->cObj->cObjGetSingle('IMAGE', $imgTSConfig), $tConf) . $caption[$row] . '</li>';
                 } else { // no images links
                     // Fill marker array
                     // Put imgTSConfig in submarker with IMAGE function to make it an image and wrap with <li></li>
-                    $markerArrayItem['###FIELD_ITEM###'] = '<li>' . $this->cObj->IMAGE($imgTSConfig) . $caption[$row] . '</li>';
+                    $markerArrayItem['###FIELD_ITEM###'] = '<li>' . $this->cObj->cObjGetSingle('IMAGE', $imgTSConfig) . $caption[$row] . '</li>';
                 }
 
                 // Compose the content
-                $contentItem .= $this->cObj->substituteMarkerArrayCached($subparts['item'], $markerArrayItem);
+                $contentItem .= $this->templateService->substituteMarkerArrayCached($subparts['item'], $markerArrayItem);
             } // end for
         } // end filling marker array items, for images
         // Create buttons HTML if useButtons in flexform = 1
@@ -459,27 +465,27 @@ HEREDOC;
         if ($pagination == 1) {
             $paginationButtons = '<div class="pagination" id="pagination' . $currentCeID . '"></div>';
         }
-
+        $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
         // insert js, CSS and configuration js in header
         if ($includeOwnJqueryLib) {
             //load jquery if needed
-            $GLOBALS['TSFE']->getPageRenderer()->addJsFooterFile($GLOBALS['TSFE']->tmpl->getFileName($this->conf['pathToJquery']), $type = 'text/javascript', $compress = true, $forceOnTop = false, $allWrap = '');
+            $pageRenderer->addJsFooterFile($GLOBALS['TSFE']->tmpl->getFileName($this->conf['pathToJquery']), $type = 'text/javascript', $compress = true, $forceOnTop = false, $allWrap = '');
         }
         //load jquery.carouFredSel.js if path is filled in
         $includeCarouFredselJs = $this->conf['pathToJPcarouselJS'] ? true : false;
         if ($includeCarouFredselJs) {
-            $GLOBALS['TSFE']->getPageRenderer()->addJsFooterFile($GLOBALS['TSFE']->tmpl->getFileName($pathToJPcarouselJS), $type = 'text/javascript', $compress = true, $forceOnTop = false, $allWrap = '');
+            $pageRenderer->addJsFooterFile($GLOBALS['TSFE']->tmpl->getFileName($pathToJPcarouselJS), $type = 'text/javascript', $compress = true, $forceOnTop = false, $allWrap = '');
         }
 
         // if general CSS should be loaded (checkbox in Flexform)
         if ($this->lConf['includeCSS']) {
-            $GLOBALS['TSFE']->getPageRenderer()->addCssFile($GLOBALS['TSFE']->tmpl->getFileName($pathToJPcarouselCSS), $rel = 'stylesheet', $media = 'all', $title = '', $compress = true, $forceOnTop = false, $allWrap = '');
+            $pageRenderer->addCssFile($GLOBALS['TSFE']->tmpl->getFileName($pathToJPcarouselCSS), $rel = 'stylesheet', $media = 'all', $title = '', $compress = true, $forceOnTop = false, $allWrap = '');
         }
         //load dynamic CSS
         $dynamicJpCCSS = '#' . $currentCeID . ' .' . $carouselID . ' li {width:' . $li_width . 'px; height:' . $li_height . 'px;} #' . $currentCeID . ' .carouselContainer {' . $styleCarouselContainer . '}';
-        $GLOBALS['TSFE']->getPageRenderer()->addCssInlineBlock($currentCeID . $carouselID, $dynamicJpCCSS, $compress = true, $forceOnTop = false);
+        $pageRenderer->addCssInlineBlock($currentCeID . $carouselID, $dynamicJpCCSS, $compress = true, $forceOnTop = false);
         //load dynamic JS
-        $GLOBALS['TSFE']->getPageRenderer()->addJsFooterInlineCode($currentCeID . $carouselID, $carouFredSelConfig, $compress = true, $forceOnTop = false);
+        $pageRenderer->addJsFooterInlineCode($currentCeID . $carouselID, $carouFredSelConfig, $compress = true, $forceOnTop = false);
 
         // Fill marker array
         // Don't put <ul></ul> marks when "Type of list item" is a list, that content should itself provide these marks
@@ -495,7 +501,7 @@ HEREDOC;
         $markerArrayScript['###PAGINATION###'] = $paginationButtons;
 
         // Substitute markers
-        $contentItemControl = $this->cObj->substituteMarkerArrayCached($subparts['control'], $markerArrayScript);
+        $contentItemControl = $this->templateService->substituteMarkerArrayCached($subparts['control'], $markerArrayScript);
 
         // Fill subpart markers
         $subpartArray['###FIELD_CAROUSEL_ID###'] = $carouselID;
@@ -505,7 +511,7 @@ HEREDOC;
         $subpartArray['###CONTROL###'] = $contentItemControl;
 
         // Complete the template expansion
-        $content = $this->cObj->substituteMarkerArrayCached($subparts['template'], null, $subpartArray);
+        $content = $this->templateService->substituteMarkerArrayCached($subparts['template'], null, $subpartArray);
 
         return $this->pi_wrapInBaseClass($content);
     }
@@ -522,5 +528,24 @@ HEREDOC;
         $conf['source'] = $id;
         $conf['dontCheckPid'] = 1;
         return $this->cObj->cObjGetSingle('RECORDS', $conf);
+    }
+
+    public function getFlexformFields()
+    {
+        $this->pi_initPIflexForm();
+        // get flexform data
+        // cObj->flexformIntoConf arbeitet nur mit dem ersten sheet
+        $piFlexForm = $this->cObj->data['pi_flexform'];
+        if (is_array($piFlexForm)) {
+            $sDef = current($piFlexForm['data']);
+            foreach ($piFlexForm['data'] as $sheet => $data) {
+                foreach ($data['lDEF'] as $key => $val) {
+                    $temp = $this->pi_getFFvalue($piFlexForm, $key, $sheet, 'lDEF');
+                    if (strlen($temp) > 0) {
+                        $this->lConf[$key] = $temp;
+                    }
+                }
+            }
+        }
     }
 }
